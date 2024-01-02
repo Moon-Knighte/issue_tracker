@@ -19,7 +19,7 @@ const NavBar = () => {
     ]
 
   return (
-  <nav className='flex space-x-8 border-b mb-5 px-5 h-14 items-center'>
+  <nav className='flex space-x-8 border-b mb-5 px-5 items-center h-20 '>
     <Link href='/'><BsBugFill /></Link>
 
     <ul className='flex space-x-8'>
@@ -27,9 +27,9 @@ const NavBar = () => {
         <Link 
         key= {link.href} 
         className={classNames({
-       'text-zinc-50' : link.href === currentPath,
-       'text-zinc-400' : link.href !== currentPath,
-       'hover:text-zinc-50 transition-colors' : true,
+       'text-zinc-900' : link.href === currentPath,
+       'text-zinc-500' : link.href !== currentPath,
+       'hover:text-zinc-900 transition-colors' : true,
         })}
         href={link.href}>{link.label}</Link>)}
     </ul>
